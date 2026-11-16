@@ -65,13 +65,10 @@ def main() -> None:
     ax.plot(depths, test_acc, color="#3f6b2a", lw=2.2, label="test accuracy (what it learned)")
     ax.axhline(0.90, color="k", lw=0.8, alpha=0.35)
     ax.text(12.5, 0.907, "ceiling set by 10 % flipped labels", fontsize=8, alpha=0.6)
-    best = int(np.argmax(test_acc))
-    ax.annotate(f"best: depth {best + 1}", (best + 1, test_acc[best]), (best + 4, 0.71),
-                arrowprops=dict(arrowstyle="-", lw=0.8), fontsize=9)
     ax.set_xlabel("max tree depth")
     ax.set_ylabel("accuracy")
     ax.set_xticks(list(depths)[::2])
-    ax.legend(frameon=False, loc="lower right")
+    ax.legend(frameon=False, loc="center right")
     ax.grid(alpha=0.25)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
