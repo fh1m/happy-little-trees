@@ -1,0 +1,22 @@
+README-2023.md
+  h_f1b9066eb9899c 1-7
+README.md
+  h_f1b9066eb9899c 12-23,52-82,90-91,98,100-101
+happytrees/export.py
+  h_f1b9066eb9899c 1-54
+requirements.txt
+  h_f1b9066eb9899c 4
+tests/test_export.py
+  h_f1b9066eb9899c 1-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "9adf5b36bbfe5d9acaccfdc484394c00ba55338c",
+  "prompts": {},
+  "humans": {
+    "h_f1b9066eb9899c": {
+      "author": "fh1m <fahim.2002.faisal@gmail.com>"
+    }
+  }
+}
