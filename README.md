@@ -33,7 +33,7 @@ Anything above that is memory, not skill.
 
 - **Training accuracy is a liar with a perfect score.** The unlimited tree is
   right about every training point and wrong about one test point in five.
-  The 28 leaves it grows past depth 8 are portraits of individual flipped labels.
+  The 23 leaves it grows past depth 8 are portraits of individual flipped labels.
 - **The test curve barely moves.** After depth 2 it wanders between 0.77 and
   0.81 while the leaf count grows 18×. Depth 8 edges ahead on this split,
   which is exactly the kind of win that disappears with a different seed.
