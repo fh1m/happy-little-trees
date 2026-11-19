@@ -1,8 +1,8 @@
 """Grow a decision tree one level at a time and watch it start painting noise.
 
-The 2023 script scored 100 % on Iris and stopped, which taught me nothing,
-because Iris is too polite to overfit. Here the canvas is two interleaved
-half-moons with 10 % of labels flipped: real signal, real accidents.
+The 2023 script scored 100 % on one Iris split without testing how its
+complexity affected generalisation. Here the canvas is two interleaved
+half-moons; each label is flipped with probability 0.10 before splitting.
 
     python -m happytrees.run          # prints the table, writes assets/*.png
 """
@@ -64,7 +64,7 @@ def main() -> None:
     ax.plot(depths, train_acc, color="#1f3a5f", lw=2.2, label="training accuracy (what it memorised)")
     ax.plot(depths, test_acc, color="#3f6b2a", lw=2.2, label="test accuracy (what it learned)")
     ax.axhline(0.90, color="k", lw=0.8, alpha=0.35)
-    ax.text(12.5, 0.907, "ceiling set by 10 % flipped labels", fontsize=8, alpha=0.6)
+    ax.text(19.5, 0.907, "90 % ideal-signal expectation", ha="right", fontsize=8, alpha=0.7)
     ax.set_xlabel("max tree depth")
     ax.set_ylabel("accuracy")
     ax.set_xticks(list(depths)[::2])
