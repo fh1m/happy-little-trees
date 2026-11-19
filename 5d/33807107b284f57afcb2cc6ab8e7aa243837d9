@@ -1,0 +1,16 @@
+README.md
+  h_b19ddd3ca98e3d 17-40,58-68,76-78,101-139,151-173
+happytrees/run.py
+  h_b19ddd3ca98e3d 3-5,67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "5d33807107b284f57afcb2cc6ab8e7aa243837d9",
+  "prompts": {},
+  "humans": {
+    "h_b19ddd3ca98e3d": {
+      "author": "Fahim Faisal <fahim.2002.faisal@gmail.com>"
+    }
+  }
+}
